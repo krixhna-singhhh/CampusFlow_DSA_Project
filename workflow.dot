@@ -1,0 +1,14 @@
+digraph G {
+  rankdir=TB;
+  node [shape=box, style="rounded"];
+  Start [shape=oval];
+  Command [label="Run python -m campusflow <command>"];
+  Parse [label="Parse command and arguments"];
+  Validate [label="Validate user input"];
+  Module [label="Execute selected DSA module"];
+  Persist [label="Read/write JSON when required"];
+  Output [label="Print result to terminal"];
+  End [shape=oval];
+  Start -> Command -> Parse -> Validate -> Module -> Persist -> Output -> End;
+  Validate -> Output [label="invalid input"];
+}

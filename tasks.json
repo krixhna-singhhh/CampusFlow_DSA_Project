@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "task_id": "98a43213",
+      "title": "Revise linked lists",
+      "subject": "DSA",
+      "priority": 5,
+      "deadline": "2026-09-20",
+      "estimated_hours": 2.0,
+      "completed": false
+    },
+    {
+      "task_id": "4863e316",
+      "title": "Practice graph traversal",
+      "subject": "DSA",
+      "priority": 4,
+      "deadline": "2026-09-22",
+      "estimated_hours": 1.5,
+      "completed": false
+    },
+    {
+      "task_id": "3eec8925",
+      "title": "Write lab record",
+      "subject": "Programming Lab",
+      "priority": 3,
+      "deadline": "2026-09-24",
+      "estimated_hours": 1.0,
+      "completed": false
+    }
+  ]
+}

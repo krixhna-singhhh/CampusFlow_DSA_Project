@@ -1,0 +1,13 @@
+digraph G {
+  rankdir=LR;
+  node [shape=ellipse];
+  Student [shape=box];
+  T1 [label="Manage Tasks"];
+  T2 [label="Generate Priority Plan"];
+  C1 [label="View Course Order"];
+  C2 [label="Find Prerequisite Path"];
+  R1 [label="Manage Resources"];
+  R2 [label="Search Resources"];
+  A1 [label="View Analytics"];
+  Student -> T1; Student -> T2; Student -> C1; Student -> C2; Student -> R1; Student -> R2; Student -> A1;
+}

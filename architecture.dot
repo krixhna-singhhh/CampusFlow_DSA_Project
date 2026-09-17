@@ -1,0 +1,20 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style="rounded"];
+  User [shape=oval];
+  CLI [label="Command-Line Interface\n(campusflow/cli.py)"];
+  Task [label="Task Manager\nHeap scheduling"];
+  CourseGraphNode [label="Course Graph\nBFS + Topological Sort"];
+  Resource [label="Resource Catalog\nHash index + Prefix Search"];
+  Analytics [label="Analytics\nCounters + ASCII charts"];
+  Storage [label="JSON Storage", shape=cylinder];
+  User -> CLI;
+  CLI -> Task;
+  CLI -> CourseGraphNode;
+  CLI -> Resource;
+  CLI -> Analytics;
+  Task -> Storage;
+  Resource -> Storage;
+  Task -> Analytics;
+  Resource -> Analytics;
+}

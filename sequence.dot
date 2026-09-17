@@ -1,0 +1,11 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box];
+  User; CLI; TaskManager; Heap; JSONStorage;
+  User -> CLI [label="task-plan"];
+  CLI -> TaskManager [label="recommended_order()"];
+  TaskManager -> Heap [label="push pending tasks"];
+  Heap -> TaskManager [label="pop by priority/deadline"];
+  TaskManager -> CLI [label="ordered tasks"];
+  CLI -> User [label="formatted terminal output"];
+}

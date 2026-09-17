@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "resource_id": "89b9d08f",
+      "title": "Graph Algorithms Notes",
+      "topic": "BFS DFS shortest path",
+      "resource_type": "Notes",
+      "location": "data/notes/graphs"
+    },
+    {
+      "resource_id": "4685a91d",
+      "title": "Heap Practice Set",
+      "topic": "priority queue heap",
+      "resource_type": "Worksheet",
+      "location": "data/worksheets/heaps"
+    },
+    {
+      "resource_id": "50907796",
+      "title": "Sorting Cheat Sheet",
+      "topic": "sorting complexity",
+      "resource_type": "Reference",
+      "location": "data/reference/sorting"
+    }
+  ]
+}

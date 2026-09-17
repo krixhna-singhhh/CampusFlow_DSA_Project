@@ -1,0 +1,7 @@
+{
+  "application_name": "CampusFlow",
+  "version": "1.0.0",
+  "storage": "JSON",
+  "default_priority_scale": "1-5",
+  "date_format": "YYYY-MM-DD"
+}

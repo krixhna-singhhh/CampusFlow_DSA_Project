@@ -1,0 +1,14 @@
+digraph G {
+  rankdir=LR;
+  node [shape=record];
+  Task [label="{Task|task_id\ltitle\lsubject\lpriority\ldeadline\lestimated_hours\lcompleted\l}"];
+  Resource [label="{Resource|resource_id\ltitle\ltopic\lresource_type\llocation\l}"];
+  Storage [label="{JSONStorage|path\l|load()\lsave()\l}"];
+  TM [label="{TaskManager|tasks\l|add_task()\lcomplete_task()\ldelete_task()\lrecommended_order()\lstats()\l}"];
+  CG [label="{CourseGraph|graph\lnodes\l|add_prerequisite()\ltopological_order()\lfind_path()\l}"];
+  RC [label="{ResourceCatalog|resources\lby_id\l|add()\ldelete()\lsearch_title_prefix()\lsearch_topic_linear()\l}"];
+  TM -> Task [label="manages"];
+  TM -> Storage [label="uses"];
+  RC -> Resource [label="manages"];
+  RC -> Storage [label="uses"];
+}
